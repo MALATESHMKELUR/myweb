@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Bangalore Optical Store</title>
+    <link rel="stylesheet" href="cartstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="header-left">
+            <h1>Bangalore Optical Store</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html" >Cart</a></li>
+                    <li><a href="checkout.html" class="active">Checkout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="checkout">
+    <div class="container">
+        <h2>Checkout</h2>
+        <form action="#" method="post">
+            <div class="checkout-details">
+                <h3>Billing Details</h3>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit" class="btn-submit">Complete Purchase</button>
+            </div>
+        </form>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Items: 3</p>
+            <p>Total: ₹3000.00</p>
+            <!-- Add more summary details as needed -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2024 Bangalore Optical Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<button class="whatsapp-float" onclick="window.location.href='https://wa.me/yourwhatsapplink'">
+    <img src="icons/whatsapp-icon.png" alt="Chat with us on WhatsApp" />
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Optical Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hindi:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <h1>Bangalore Optical Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="language-switcher">
+                    <a href="index.html" id="english-link">English</a>
+                    <a href="index-kn.html" id="kannada-link">ಕನ್ನಡ</a>
+                </li>
+                <li class="header-links">
+                    <a href="cart.html">View Cart</a> |
+                    <a href="checkout.html">Checkout</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="news-ticker">
+    <span>📣 Special Offer: Get 20% off on all eyewear this month! | New arrivals in our store | Visit us for exclusive deals!</span>
+</section>
+
+<section id="home" class="hero">
+    <div class="container hero-container">
+        <h2>Welcome to Bangalore Optical Store</h2>
+        <p>Your one-stop shop for all things eyewear in Bangalore.</p>
+        <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/yourwhatsapplink'">Chat with Us on WhatsApp</button>
+    </div>
+</section>
+
+<section class="photo-gallery">
+    <div class="slides">
+        <div class="slide" style="background-image: url('images/1.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/2.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/3.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/download.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/5.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/6.jpeg');"></div>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <article class="product">
+                <img src="path/to/glasses1.jpg" alt="Stylish Glasses 1">
+                <h3>Stylish Glasses 1</h3>
+                <p>₹1000.00</p>
+                <button class="btn-add" onclick="addToCart('Stylish Glasses 1', 1000)">Add to Cart</button>
+            </article>
+            <article class="product">
+                <img src="path/to/glasses2.jpg" alt="Stylish Glasses 2">
+                <h3>Stylish Glasses 2</h3>
+                <p>₹1200.00</p>
+                <button class="btn-add" onclick="addToCart('Stylish Glasses 2', 1200)">Add to Cart</button>
+            </article>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>We are a leading optical store based in Bangalore offering a wide range of eyewear products. Our mission is to provide high-quality lenses and frames that suit every need and style.</p>
+            <p>Our team of experienced professionals is dedicated to helping you find the perfect eyewear solution. Whether you're looking for stylish sunglasses, prescription glasses, or the latest in optical technology, we have something for everyone.</p>
+            <p>Visit us today to explore our extensive collection and take advantage of our special offers.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-info">
+            <div class="contact-info-left">
+                <h2>Contact Us</h2>
+                <p>Address: 123 Optical Lane, Bangalore, Karnataka, India</p>
+                <p>Phone: <a href="tel:+918765432109">+91 87654 32109</a></p>
+                <p>Email: <a href="mailto:info@bangaloreopticalstore.com">info@bangaloreopticalstore.com</a></p>
+            </div>
+            <div class="contact-info-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14677472.93045725!2d77.54910479552278!3d12.959865388036904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1fe1e0808f5f%3A0x1eb67b82b3a5a0a5!2sBangalore%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1630700138254!5m2!1sen!2sin"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-form-reviews" class="contact-form-reviews">
+    <div class="container">
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-slider">
+                <div class="review">
+                    <p>"Great service and excellent product quality!" - Jane Doe</p>
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"I found exactly what I needed. Highly recommended." - John Smith</p>
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"Friendly staff and a wide selection of eyewear." - Mary Johnson</p>
+                    <div class="rating-stars">⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"My go-to store for all my optical needs." - Robert Brown</p>
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"Affordable prices and top-notch service." - Emily Davis</p>
+                    <div class="rating-stars">⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="review-controls">
+                <button class="review-control" onclick="prevReview()">&#10094;</button>
+                <button class="review-control" onclick="nextReview()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="follow-us" class="follow-us">
+    <div class="container">
+        <h2>Follow Us</h2>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link"><img src="icons/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank" class="social-link"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank" class="social-link"><img src="icons/twitter.png" alt="Twitter"></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2024 Bangalore Optical Store. All rights reserved.</p>
+        <p>Visitors: <span id="visit-count">0</span></p>
+    </div>
+</footer>
+
+<button class="whatsapp-float" onclick="window.location.href='https://wa.me/yourwhatsapplink'">
+    <img src="icons/whatsapp-icon.png" alt="Chat with us on WhatsApp" />
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

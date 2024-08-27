@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಬೆಂಗಳೂರು ಆಪ್ಟಿಕಲ್ ಸ್ಟೋರ್</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hindi:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <h1>ಬೆಂಗಳೂರು ಆಪ್ಟಿಕಲ್ ಸ್ಟೋರ್</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">ಮನೆ</a></li>
+                <li><a href="#products">ಉತ್ಪನ್ನಗಳು</a></li>
+                <li><a href="#about">ನಮ್ಮ ಬಗ್ಗೆ</a></li>
+                <li><a href="#contact">ಸಂಪರ್ಕ</a></li>
+                <li class="language-switcher">
+                    <a href="index.html" id="english-link">English</a>
+                    <a href="index-kn.html" id="kannada-link">ಕನ್ನಡ</a>
+                </li>
+                <li class="header-links">
+                    <a href="cart.html">ಕಾರ್ಟ್ ನೋಡಿ</a> |
+                    <a href="checkout.html">ಚೆಕ್ಔಟ್</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="news-ticker">
+    <span>📣 ವಿಶೇಷ ಕೊಡುಗೆ: ಈ ತಿಂಗಳು ಎಲ್ಲಾ ಐವಿಯರ್‌ಗಳ ಮೇಲೆ 20% ಡಿಸ್ಕೌಂಟ್! | ನಮ್ಮ ಅಂಗಡಿಯಲ್ಲಿ ಹೊಸ ಕಲಕ್ಷನ್‌ಗಳು | ವಿಶೇಷ ಆಫರ್‌ಗಳಿಗಾಗಿ ನಮಗೆ ಭೇಟಿ ನೀಡಿ!</span>
+</section>
+
+<section id="home" class="hero">
+    <div class="container hero-container">
+        <h2>ಬೆಂಗಳೂರು ಆಪ್ಟಿಕಲ್ ಸ್ಟೋರ್‌ಗೆ ಸ್ವಾಗತ</h2>
+        <p>ಬೆಂಗಳೂರುದಲ್ಲಿ ಎಲ್ಲಾ ರೀತಿಯ ಐವಿಯರ್‌ಗಳಿಗೆ ನಿಮ್ಮ ಒಬ್ಬ ಸ್ಥಾನದ ಅಂಗಡಿ.</p>
+        <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/yourwhatsapplink'">ನಮ್ಮೊಂದಿಗೆ ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ</button>
+    </div>
+</section>
+
+<section class="photo-gallery">
+    <div class="slides">
+        <div class="slide" style="background-image: url('images/1.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/2.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/3.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/download.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/5.jpeg');"></div>
+        <div class="slide" style="background-image: url('images/6.jpeg');"></div>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <div class="container">
+        <h2>ನಮ್ಮ ಉತ್ಪನ್ನಗಳು</h2>
+        <div class="product-list">
+            <article class="product">
+                <img src="path/to/glasses1.jpg" alt="ಶೈಲಿಯ ನ안을 1">
+                <h3>ಶೈಲಿಯ ನಾನ 1</h3>
+                <p>₹1000.00</p>
+                <button class="btn-add" onclick="addToCart('ಶೈಲಿಯ ನಾನ 1', 1000)">ಕೋಷ್ಟಕದಲ್ಲಿ ಸೇರಿಸಿ</button>
+            </article>
+            <article class="product">
+                <img src="path/to/glasses2.jpg" alt="ಶೈಲಿಯ ನಾನ 2">
+                <h3>ಶೈಲಿಯ ನಾನ 2</h3>
+                <p>₹1200.00</p>
+                <button class="btn-add" onclick="addToCart('ಶೈಲಿಯ ನಾನ 2', 1200)">ಕೋಷ್ಟಕದಲ್ಲಿ ಸೇರಿಸಿ</button>
+            </article>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-text">
+            <h2>ನಮ್ಮ ಬಗ್ಗೆ</h2>
+            <p>ನಾವು ಬೆಂಗಳೂರಿನಲ್ಲಿ ಆಪ್ಟಿಕಲ್ ಶ್ರೇಣಿಯ ಪ್ರಮುಖ ಅಂಗಡಿಯಾಗಿದ್ದೇವೆ. ನಮ್ಮ ಉದ್ದೇಶವು ಪ್ರತಿಯೊಂದು ಅಗತ್ಯ ಮತ್ತು ಶೈಲಿಯ ಅನುಗುಣವಾದ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಲೆನ್ಸ್‌ಗಳು ಮತ್ತು ಫ್ರೇಮ್‌ಗಳನ್ನು ಒದಗಿಸಲು ಹವ್ಯಾಸಿ.</p>
+            <p>ನಮ್ಮ ಅನುಭವಿಯು ಉನ್ನತ-ಗುಣಮಟ್ಟದ ಆಯ್ಕೆಯನ್ನು ಒದಗಿಸಲು ನಿಮ್ಮ ಸಹಾಯಕ್ಕೆ ಬದ್ಧರಾಗಿದ್ದಾರೆ. ನೀವು ಶೈಲಿಯ ಸನ್ಸ್‌ಗ್ಲಾಸಸ್, ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಗ್ಲಾಸಸ್ ಅಥವಾ ಹೊಸತಾದ ಆಪ್ಟಿಕಲ್ ತಂತ್ರಜ್ಞಾನವನ್ನು ಹುಡುಕುತ್ತಿರುವಾಗ, ನಿಮಗಾಗಿ ಎಲ್ಲವೂ ಇದೆ.</p>
+            <p>ನಮ್ಮ ವಿಶಿಷ್ಟ ಸಂಗ್ರಹವನ್ನು ಅನ್ವೇಷಿಸಲು ಮತ್ತು ನಮ್ಮ ವಿಶೇಷ ಆಫರ್‌ಗಳನ್ನು ಪ್ರಯೋಜನ ಪಡೆಯಲು ಇಂದು ನಮ್ಮನ್ನು ಭೇಟಿಸಲು ಭೇಟಿ ನೀಡಿ.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-info">
+            <div class="contact-info-left">
+                <h2>ನಮಗೆ ಸಂಪರ್ಕಿಸಿ</h2>
+                <p>ವಿಳಾಸ: 123 ಆಪ್ಟಿಕಲ್ ಲೇನ್, ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ, ಭಾರತ</p>
+                <p>ಫೋನ್: <a href="tel:+918765432109">+91 87654 32109</a></p>
+                <p>ಇಮೇಲ್: <a href="mailto:info@bangaloreopticalstore.com">info@bangaloreopticalstore.com</a></p>
+            </div>
+            <div class="contact-info-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14677472.93045725!2d77.54910479552278!3d12.959865388036904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1fe1e0808f5f%3A0x1eb67b82b3a5a0a5!2sBangalore%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1630700138254!5m2!1sen!2sin"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-form-reviews" class="contact-form-reviews">
+    <div class="container">
+        <div class="contact-form">
+            <h2>ನಮಗೆ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಿ</h2>
+            <form action="#" method="post">
+                <label for="name">ಹೆಸರು:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">ಇಮೇಲ್:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">ಸಂದೇಶ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">ಕಳುಹಿಸಿ</button>
+            </form>
+        </div>
+        <div class="reviews">
+            <h2>ಗ್ರಾಹಕರ ವಿಮರ್ಶೆಗಳು</h2>
+            <div class="review-slider">
+                <div class="review">
+                    <p>"ಉತ್ತಮ ಸೇವೆ ಮತ್ತು ಶ್ರೇಣಿಯ ಗುಣಮಟ್ಟ!" - ಜೇನ್ ಡೋ</p>
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"ನಾನು ಅಗತ್ಯವಿರುವುದನ್ನು ನಿಖರವಾಗಿ ಕಂಡುಹಿಡಿದಿದ್ದೇನೆ. ಉನ್ನತ ಶ್ರೇಣಿಯ ಶಿಫಾರಸು." - ಜಾನ್ ಸ್ಮಿತ್</p>
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"ಹೊರಗಿನ ಸಿಬ್ಬಂದಿ ಮತ್ತು ಐವಿಯರ್‌ಗಳ ವ್ಯಾಪಕ ಆಯ್ಕೆಯು." - ಮೇರಿ ಜಾನ್ಸನ್</p>
+                    <div class="rating-stars">⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"ನಾನು ನನ್ನ ಎಲ್ಲಾ ಆಪ್ಟಿಕಲ್ ಅಗತ್ಯಗಳಿಗಾಗಿ ನನ್ನ ಪಾಲುದಾರ" - ರಾಬರ್ಟ್ ಬ್ರೌನ್</p>
+                    <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"ಮೂಲ್ಯ ಅಂತರ ಮತ್ತು ಶ್ರೇಣಿಯ ಸೇವೆ." - ಎಮಿಲಿ ಡೇವಿಸ್</p>
+                    <div class="rating-stars">⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="review-controls">
+                <button class="review-control" onclick="prevReview()">&#10094;</button>
+                <button class="review-control" onclick="nextReview()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="follow-us" class="follow-us">
+    <div class="container">
+        <h2>ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ</h2>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link"><img src="icons/instagram.png" alt="ಇನ್‌ಸ್ಟಾಗ್ರಾಮ್"></a>
+            <a href="https://facebook.com" target="_blank" class="social-link"><img src="icons/facebook.png" alt="ಫೇಸ್ಬುಕ್"></a>
+            <a href="https://twitter.com" target="_blank" class="social-link"><img src="icons/twitter.png" alt="ಟ್ವಿಟರ್"></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2024 ಬೆಂಗಳೂರು ಆಪ್ಟಿಕಲ್ ಸ್ಟೋರ್. ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</p>
+        <p>ಭಟಕರ: <span id="visit-count">0</span></p>
+    </div>
+</footer>
+
+<button class="whatsapp-float" onclick="window.location.href='https://wa.me/yourwhatsapplink'">
+    <img src="icons/whatsapp-icon.png" alt="ನಮ್ಮೊಂದಿಗೆ ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ" />
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
